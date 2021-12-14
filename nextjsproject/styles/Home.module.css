@@ -1,6 +1,24 @@
 .container {
   padding: 0 2rem;
 }
+.signin{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.inline{
+  float: right;
+  display: flex;
+  justify-content: flex-end;
+}
+.signin a{
+  display: block;
+  color: gray;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
 .main {
   min-height: 100vh;
@@ -11,106 +29,88 @@
   justify-content: center;
   align-items: center;
 }
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+.logo {
+  position: absolute;
+  padding: 10px 0px;
 }
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+.right{
+  width: 20px;
+  height: 30px;
+      transform: rotate(225deg);
+  box-shadow: -10px 10px 0 rgba(44, 156, 219, 1);
+  border-radius: 1px;
+margin-left: 30px;
+position: absolute;
+top: 18px;
+text-align: center;
 }
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
+.left{
+  width: 20px;
+  height: 30px;
+  transform: rotate(45deg);
+  box-shadow: -10px 10px 0 rgba(242, 153, 74, 1);
+  border-radius: 1px;
+  margin-left: 50px;
+  position: absolute;
+  top: 5px;
   text-align: center;
 }
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
+.ul {
+  list-style-type: none;
   margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.li {
+  float: left;
+}
+.li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-left: 120px;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+/* Change the link color to #111 (black) on hover */
+.li a:hover {
+  background-color: #111;
 }
+.active {
+  background-color: #04AA6D;
+}
+
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 10px;
+  text-align: center;
+  margin-right: 15px;
+}
+.footer {
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  background-color: #222;
+  height: 200px;
+}
+.footer p {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10%;
+  align-items: center;
+  flex-grow: 1;
+  color: #eaeaea;
+}
+.footer span {
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 35%;
+}
+
+
